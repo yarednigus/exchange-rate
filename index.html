@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Exchange Rate Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="money.png" alt="" class="money-img" />
+    <h1>Exchange Rate Calculator</h1>
+    <p>Choose the currency and the amount to ger the exchange Rate</p>
+    <div class="container">
+      <div class="currency">
+        <select id="currency-one">
+          <option value="BSD">BSD</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+          <option value="CLP">CLP</option>
+          <option value="CNY">CNY</option>
+          <option value="COP">COP</option>
+          <option value="CZK">CZK</option>
+          <option value="DKK">DKK</option>
+          <option value="GBP">GBP</option>
+          <option value="HRK">HRK</option>
+          <option value="USD" selected>USD</option>
+        </select>
+        <input type="number" id="amount-one" placeholder="0" value="1" />
+      </div>
+      <div class="swap-rate-container">
+        <button class="btn" id="swap">Swap</button>
+        <div class="class" id="rate"></div>
+      </div>
+      <div class="currency">
+        <select id="currency-two">
+          <option value="BSD">BSD</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+          <option value="CLP">CLP</option>
+          <option value="CNY">CNY</option>
+          <option value="COP">COP</option>
+          <option value="CZK">CZK</option>
+          <option value="DKK" selected>DKK</option>
+          <option value="GBP">GBP</option>
+          <option value="HRK">HRK</option>
+          <option value="USD">USD</option>
+        </select>
+        <input type="number" id="amount-two" placeholder="0" value="0" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
